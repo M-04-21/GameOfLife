@@ -15,7 +15,7 @@ class Application extends JFrame {
   boolean spacePressed = true;
   boolean nextPressed = false;
 
-  //Constructure
+  //Constructor
   public Application(int width, int height, int pixelSize) {
     super();
 
@@ -50,8 +50,7 @@ class Application extends JFrame {
     public void paintComponent(Graphics g) {
       super.paintComponent(g);
 
-				g.setColor(Color.black);
-      //g.setColor(new Color(rnd.nextInt(255),rnd.nextInt(255),rnd.nextInt(255)));
+			g.setColor(Color.black);
       for(int i = 0; i * pixelSize < width; i++) {
         for(int j = 0; j * pixelSize < height; j++) {
           if(fld.getElement(i,j)){
